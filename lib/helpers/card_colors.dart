@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../models/card_color_model.dart';
 
 class CardColor {
   static const baseColor = <Color>[
@@ -12,4 +13,9 @@ class CardColor {
     Color.fromRGBO(222, 88, 116, 1.0), //Salmon
     Color.fromRGBO(128, 182, 234, 1.0) //LightCyan
   ];
+
+  static List<CardColorModel> cardColors = new List<CardColorModel>.generate(
+    baseColor.length, 
+          (int index) => CardColorModel(isSelected: false, cardColor: index)
+  );
 }

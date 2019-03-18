@@ -114,7 +114,7 @@ class CardFrontList extends StatelessWidget {
     );
 
     final _cardOwner = Padding(
-      padding: const EdgeInsets.only(top: 15.0, left: 15.0),
+      padding: const EdgeInsets.only(top: 15.0, left: 50.0),
       child: Text(
         cardModel.cardHolderName,
         style: TextStyle(color: Colors.white, fontSize: 18.0),

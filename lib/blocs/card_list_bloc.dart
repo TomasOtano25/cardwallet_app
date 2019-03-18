@@ -28,10 +28,14 @@ class CardListBloc {
     initialData();
   }
 
+  void addCardToList(CardResults newCard) {
+    _cardResults.add(newCard);
+    _cardsCollection.sink.add(_cardResults);
+  }
+
   void dispose() {
     _cardsCollection.close();
   }
-
 }
 
 final cardListBloc = CardListBloc();

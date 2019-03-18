@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../ui/widgets/card_list.dart';
+import './card_type.dart';
 
 class App extends StatelessWidget {
   @override
@@ -27,7 +28,14 @@ class App extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.add,
                 color: Colors.black),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) =>
+                    CardType()
+                  )
+              );
+            },
           )
         ],
       ),
