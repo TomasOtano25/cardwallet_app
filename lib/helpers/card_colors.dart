@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/card_color_model.dart';
 
 class CardColor {
-  static const baseColor = <Color>[
+  static const baseColors = <Color>[
     Color.fromRGBO(61, 132, 223, 1.0), //LightBlue,
     Color.fromRGBO(114, 71, 200, 1.0), //Purple,
     Color.fromRGBO(106, 188, 121, 1.0), //Green,
@@ -15,7 +15,7 @@ class CardColor {
   ];
 
   static List<CardColorModel> cardColors = new List<CardColorModel>.generate(
-    baseColor.length, 
+      baseColors.length,
           (int index) => CardColorModel(isSelected: false, cardColor: index)
   );
 }

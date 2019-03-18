@@ -18,7 +18,7 @@ class CardListBloc {
     var decodedJson = jsonDecode(initialData);
     _cardResults = CardModel.fromJson(decodedJson).results;
     for(var i = 0; i < _cardResults.length; i++) {
-      _cardResults[i].cardColor = CardColor.baseColor[i];
+      _cardResults[i].cardColor = CardColor.baseColors[i];
     }
 
     _cardsCollection.sink.add(_cardResults);

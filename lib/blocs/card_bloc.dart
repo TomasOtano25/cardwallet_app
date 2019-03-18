@@ -45,7 +45,7 @@ class CardBloc with Validators implements BlocBase{
       cardMonth: _cardMonth.value,
       cardYear: _cardYear.value,
       cardCvv: _cardCvv.value,
-      cardColor: CardColor.baseColor[_cardColorIndexSelected.value],
+      cardColor: CardColor.baseColors[_cardColorIndexSelected.value],
       cardType: _cardType.value
     );
 
