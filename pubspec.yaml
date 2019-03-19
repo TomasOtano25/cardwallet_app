@@ -46,6 +46,8 @@ flutter:
   assets:
     - assets/visa_logo.png
     - assets/creditcardchipsilver.png
+    - assets/card_band.jpg
+    - assets/card_back.jpg
     - data/initialData.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
