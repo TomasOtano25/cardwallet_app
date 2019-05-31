@@ -8,6 +8,7 @@ import '../helpers/formatters.dart';
 import '../blocs/card_bloc.dart';
 import '../blocs/bloc_provider.dart';
 import '../models/card_color_model.dart';
+import './card_wallet.dart';
 
 class CardCreate extends StatefulWidget {
   @override
@@ -225,14 +226,14 @@ class _CardCreate extends State<CardCreate> {
             onPressed: snapshot.hasData
                 ? () {
                     print('submit');
-                    /*var blocProviderCardWallet = BlocProvider(
+                    var blocProviderCardWallet = BlocProvider(
                       bloc: bloc,
                       child: CardWallet(),
                     );
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => blocProviderCardWallet));*/
+                            builder: (context) => blocProviderCardWallet));
                   }
                   : null,
           ),

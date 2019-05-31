@@ -24,7 +24,7 @@ class _CardWallet extends State<CardWallet> with TickerProviderStateMixin {
     rotateController = AnimationController(
         vsync: this, duration: new Duration(milliseconds: 300));
     opacityController = AnimationController(
-        vsync: this, duration: new Duration(milliseconds: 2000));
+        vsync: this, duration: new Duration(seconds: 2000));
 
     CurvedAnimation curvedAnimation = new CurvedAnimation(
         parent: opacityController, curve: Curves.fastOutSlowIn);
@@ -76,7 +76,7 @@ class _CardWallet extends State<CardWallet> with TickerProviderStateMixin {
                   builder: (context, _widget) {
                     return Transform.rotate(
                         angle: animation.value,
-                      child: _widget,
+                        child: _widget,
                     );
                   }),
             ),
